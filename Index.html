@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alishba's Portfolio</title>
+    <!-- Link to External CSS -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTy1A5Zw5+Wmw1EUSQxN0msNHXrZJwhMQ8kAoqVlyVk84qM3g+NvYhGk+5K3PZPeP14gN2C4p7pXwDw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+      
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Alishba's Portfolio</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home-section" class="home-section">
+            <div class="home-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Front-end developer crafting engaging web applications.</p>
+                <div class="buttons">
+                   
+                    <a href="https://github.com/alishbamajeed" target="_blank" id="visit-github">
+                        <button>Visit GitHub</button>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="home-image">
+                <img src="catoon.avif" alt="Alishba's Picture" class="circular-image">
+            </div>
+        </section>
+
+       <!-- About Section -->
+<section id="about-section" class="about-section">
+    <div class="about-text">
+        <h1>About Me</h1>
+        <p>Hello! I'm Alishba, a passionate web developer specializing in TypeScript, HTML, CSS, and JavaScript. I love creating modern, responsive, and interactive websites.</p>
+        <p>Join me on my journey as I continue to learn and share my experiences through my YouTube channel!</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/alishba-majeed-5099b8310/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i> 
+            </a>
+            <a href="https://www.facebook.com/alishbah.rajput.12/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i> 
+            </a>
+            <a href="https://www.instagram.com/_alishbaaa_majeed/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> 
+            </a>
+        </div>
+        
+    </div>
+    <div class="about-image">
+        <img src="a.png" alt="Alishba's Image" class="profile-image">
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects-section">
+    <h1>My Projects</h1>
+    <p>Here are some of the projects I've worked on.</p>
+    <div class="projects-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="calcu.jpg" alt="Project One" class="project-image">
+            <h2><a href="https://github.com/alishbamajeed/Simple-calculator.git" target="_blank">Project One: Simple Calculator</a></h2>
+            <p>A web-based calculator built with TypeScript, It performs basic arithmetic operations and showcases TypeScript's strong typing for improved code reliability.</p>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="atm.jpg" alt="Project Two" class="project-image">
+            <h2><a href="https://github.com/alishbamajeed/ATM-Machine.git" target="_blank">Project Two : ATM Machine Simulator</a></h2>
+            <p>
+
+                A TypeScript-based ATM simulator that lets users perform withdrawals, deposits, and check balances, showcasing basic banking functionalities.</p>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <img src="pro.jpg" alt="Project Three" class="project-image">
+            <h2><a href="https://unique-path-and-shareable-link-one.vercel.app/ " target="_blank">Project Three : Resume Builder</a></h2>
+            <p>
+                A TypeScript , Html , Css -powered resume builder that allows users to create, customize, and download professional resumes in various formats, simplifying the job application process.</p>
+        </div>
+        <!-- Add more project cards as needed -->
+    </div>
+</section>
+
+
+        <!-- Skills Section -->
+        <section id="skills-section">
+            <h1>Skills</h1>
+            <ul>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-node-js"></i> Node.js</li>
+                <li><i class="fas fa-database"></i> Databases</li>
+                <li><i class="fab fa-github"></i> GitHub</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+            <h1>Contact Me</h1>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
+                <input type="hidden" name="access_key" value="57874224-3476-43a5-bd39-bcc1be52bff4">
+                <!-- Add a redirect URL (optional) -->
+                <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you">
+                
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        
+    </main>
+
+    <footer >
+        <p>&copy; 2024 Alishba. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+        </script>
+        
+   
+</body>
+
+</html>
+    
+       
+
